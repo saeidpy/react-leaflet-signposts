@@ -1,0 +1,45 @@
+{
+  "name": "react-leaflet-signposts",
+  "version": "1.0.0",
+  "description": "react-leaflet plugin that displays arrows and a count of how many points can be found outside the current map view in each given direction",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeidpy/react-leaflet-signposts.git"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "singposts",
+    "react-leaflet",
+    "leaflet.sinposts",
+    "react-leaflet-singposts"
+  ],
+  "author": "spa <saeedpy@gamil.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saeidpy/react-leaflet-signposts/issues"
+  },
+  "homepage": "https://github.com/saeidpy/react-leaflet-signposts#readme",
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "prettier": "^1.13.2",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
